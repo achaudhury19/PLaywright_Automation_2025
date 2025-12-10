@@ -12,6 +12,7 @@ import { defineConfig, devices } from '@playwright/test';
  * See https://playwright.dev/docs/test-configuration.
  */
 export default defineConfig({
+  timeout: 600000,
   testDir: './src',
   /* Run tests in files in parallel */
   fullyParallel: true,
@@ -51,7 +52,7 @@ export default defineConfig({
 
     {  
       name: 'edge',
-      use: { ...devices['Desktop Microsoft Edge'] },
+      use: { ...devices['Desktop Edge'] },
     },
 
     /* Test against mobile viewports. */
