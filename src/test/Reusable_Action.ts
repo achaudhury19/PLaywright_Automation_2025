@@ -37,3 +37,10 @@ export async function getText(page:Page, locator:string, elementName:string){
     let results = await page.locator(locator).innerText();
     return results;
 }//end of getText
+
+//method to get text from any element by index
+export async function getTextByIndex(page:Page, locator:string, index:number, elementName:string){
+    console.log("Getting text from element "+ elementName);
+    let results = await page.locator(locator).nth(index).innerText();
+    return results;
+}//end of getTextByIndex    
