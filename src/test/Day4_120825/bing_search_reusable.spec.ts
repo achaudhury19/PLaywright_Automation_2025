@@ -1,6 +1,7 @@
 import { Page, test } from "@playwright/test";
 import { getText, type, typeText } from "../Reusable_Action";   
 import { getTextByIndex } from "../Reusable_Action";    
+import {bingReusable} from "../Day4_120825/bing_search_reusable.spec"ts;
 
 let page: Page;
 
